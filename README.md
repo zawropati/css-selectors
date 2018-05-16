@@ -12,6 +12,7 @@ Challenges:
 ## About the challenges
 - You may NOT alter the html file
 - use css pseudo-elements and pseudo-classes 
+- see the supposed layout at the finish layout.png file in this repo 
 
 **Push your solution to your github, and submit a link to your Github repo in the submission folder on Fronter:**
 https://fronter.com/kea/links/structureprops.phtml?treeid=305344
