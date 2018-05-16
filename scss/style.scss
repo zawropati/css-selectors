@@ -1,0 +1,46 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #d3a91f;
+$secondary-color: #141212;
+$width: 100%;
+$space: 20px;
+
+html, body, p , ul{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font: 100% $font-stack;
+    color: $primary-color;
+  
+  }
+  header{
+      padding:$space*2 0 $space;
+  }
+  ul {
+    list-style: none;
+
+    li {
+        margin: 0;
+        display: inline;
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            background: $primary-color;
+            padding: $space/4 $space/2;
+        }
+    }
+}
+
+article {
+    background: grayscale($primary-color);
+    color: $secondary-color;
+    padding: $space/2;
+}
+main {
+    width: $width*.9;
+    margin: 0 auto;
+    background: lighten($secondary-color, 10%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $space/2;
+  }
