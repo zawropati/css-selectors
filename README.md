@@ -13,6 +13,9 @@ Challenges:
 - You may NOT alter the html file
 - use css pseudo-elements and pseudo-classes 
 
+**Push your solution to your github, and submit a link to your Github repo in the submission folder on Fronter:**
+https://fronter.com/kea/links/structureprops.phtml?treeid=305344
+
 ## links
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
 
