@@ -1,6 +1,7 @@
 # css-selectors
 
 ## fork and clone this repository
+The html file contains the structure, the scss file a basic layout
 
 Challenges:
 1. give the menuitems different backgroundcolor on hover; - with transition
