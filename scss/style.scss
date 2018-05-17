@@ -1,5 +1,5 @@
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #d3a91f;
+$primary-color: pink;
 $secondary-color: #141212;
 $width: 100%;
 $space: 20px;
@@ -11,7 +11,7 @@ html, body, p , ul{
   body {
     font: 100% $font-stack;
     color: $primary-color;
-  
+
   }
   header{
       padding:$space*2 0 $space;
@@ -22,11 +22,20 @@ html, body, p , ul{
     li {
         margin: 0;
         display: inline;
+        
         a {
             text-decoration: none;
             color: $secondary-color;
             background: $primary-color;
             padding: $space/4 $space/2;
+            &::before{
+                content: "~";}
+            &:hover{
+                transition: 1s;
+                background-color:darksalmon;
+               
+                
+            }
         }
     }
 }
@@ -36,6 +45,29 @@ article {
     color: $secondary-color;
     padding: $space/2;
 }
+article:nth-child(4n+2){
+   grid-column: span 3;
+}
+article:nth-child(4n+3){
+  grid-column: span 3;
+ }
+
+article:first-child{
+    background-color: white;
+}
+article:last-child{
+    background-color: white;
+}
+
+article::first-letter{
+    font-size: 150%;
+}
+blockquote::before{
+    content:  ' " ';
+}
+blockquote::after{
+    content:  ' " ';
+}
 main {
     width: $width*.9;
     margin: 0 auto;
@@ -43,4 +75,12 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: $space/2;
+  }
+nav{
+    padding-left: $space*4;
+}
+  footer{
+      height: $space;
+      background: red;
+      margin-bottom: $space;
   }
